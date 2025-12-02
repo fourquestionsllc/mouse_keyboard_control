@@ -1,0 +1,984 @@
+[
+    {
+        "type": "mouse_click",
+        "button": "Button.left",
+        "pressed": true,
+        "position": [
+            651,
+            1039
+        ],
+        "time": "2025-12-02T00:58:41.142060"
+    },
+    {
+        "type": "mouse_click",
+        "button": "Button.left",
+        "pressed": false,
+        "position": [
+            651,
+            1039
+        ],
+        "time": "2025-12-02T00:58:41.269099"
+    },
+    {
+        "type": "mouse_scroll",
+        "delta": [
+            0,
+            1
+        ],
+        "position": [
+            697,
+            726
+        ],
+        "time": "2025-12-02T00:58:42.212785"
+    },
+    {
+        "type": "mouse_scroll",
+        "delta": [
+            0,
+            1
+        ],
+        "position": [
+            699,
+            724
+        ],
+        "time": "2025-12-02T00:58:42.238034"
+    },
+    {
+        "type": "mouse_scroll",
+        "delta": [
+            0,
+            1
+        ],
+        "position": [
+            705,
+            720
+        ],
+        "time": "2025-12-02T00:58:42.286461"
+    },
+    {
+        "type": "mouse_scroll",
+        "delta": [
+            0,
+            1
+        ],
+        "position": [
+            705,
+            720
+        ],
+        "time": "2025-12-02T00:58:42.332695"
+    },
+    {
+        "type": "mouse_scroll",
+        "delta": [
+            0,
+            1
+        ],
+        "position": [
+            705,
+            720
+        ],
+        "time": "2025-12-02T00:58:42.380640"
+    },
+    {
+        "type": "mouse_scroll",
+        "delta": [
+            0,
+            1
+        ],
+        "position": [
+            705,
+            720
+        ],
+        "time": "2025-12-02T00:58:42.692746"
+    },
+    {
+        "type": "mouse_scroll",
+        "delta": [
+            0,
+            1
+        ],
+        "position": [
+            705,
+            720
+        ],
+        "time": "2025-12-02T00:58:42.724729"
+    },
+    {
+        "type": "mouse_scroll",
+        "delta": [
+            0,
+            1
+        ],
+        "position": [
+            705,
+            720
+        ],
+        "time": "2025-12-02T00:58:42.756653"
+    },
+    {
+        "type": "mouse_scroll",
+        "delta": [
+            0,
+            1
+        ],
+        "position": [
+            706,
+            721
+        ],
+        "time": "2025-12-02T00:58:42.860664"
+    },
+    {
+        "type": "mouse_scroll",
+        "delta": [
+            0,
+            -1
+        ],
+        "position": [
+            706,
+            721
+        ],
+        "time": "2025-12-02T00:58:43.076674"
+    },
+    {
+        "type": "mouse_scroll",
+        "delta": [
+            0,
+            -1
+        ],
+        "position": [
+            706,
+            721
+        ],
+        "time": "2025-12-02T00:58:43.108592"
+    },
+    {
+        "type": "mouse_scroll",
+        "delta": [
+            0,
+            -1
+        ],
+        "position": [
+            706,
+            721
+        ],
+        "time": "2025-12-02T00:58:43.156458"
+    },
+    {
+        "type": "mouse_scroll",
+        "delta": [
+            0,
+            -1
+        ],
+        "position": [
+            706,
+            721
+        ],
+        "time": "2025-12-02T00:58:43.228974"
+    },
+    {
+        "type": "mouse_scroll",
+        "delta": [
+            0,
+            -1
+        ],
+        "position": [
+            712,
+            720
+        ],
+        "time": "2025-12-02T00:58:43.541564"
+    },
+    {
+        "type": "mouse_scroll",
+        "delta": [
+            0,
+            -1
+        ],
+        "position": [
+            712,
+            720
+        ],
+        "time": "2025-12-02T00:58:43.698511"
+    },
+    {
+        "type": "mouse_scroll",
+        "delta": [
+            0,
+            -1
+        ],
+        "position": [
+            712,
+            720
+        ],
+        "time": "2025-12-02T00:58:43.703815"
+    },
+    {
+        "type": "mouse_scroll",
+        "delta": [
+            0,
+            -1
+        ],
+        "position": [
+            712,
+            720
+        ],
+        "time": "2025-12-02T00:58:43.705685"
+    },
+    {
+        "type": "mouse_scroll",
+        "delta": [
+            0,
+            -1
+        ],
+        "position": [
+            712,
+            720
+        ],
+        "time": "2025-12-02T00:58:43.724779"
+    },
+    {
+        "type": "mouse_click",
+        "button": "Button.left",
+        "pressed": true,
+        "position": [
+            725,
+            729
+        ],
+        "time": "2025-12-02T00:58:44.764849"
+    },
+    {
+        "type": "mouse_click",
+        "button": "Button.left",
+        "pressed": false,
+        "position": [
+            725,
+            729
+        ],
+        "time": "2025-12-02T00:58:44.930791"
+    },
+    {
+        "type": "mouse_click",
+        "button": "Button.left",
+        "pressed": true,
+        "position": [
+            671,
+            725
+        ],
+        "time": "2025-12-02T00:58:45.556666"
+    },
+    {
+        "type": "mouse_click",
+        "button": "Button.left",
+        "pressed": false,
+        "position": [
+            671,
+            725
+        ],
+        "time": "2025-12-02T00:58:45.660824"
+    },
+    {
+        "type": "mouse_click",
+        "button": "Button.left",
+        "pressed": true,
+        "position": [
+            671,
+            725
+        ],
+        "time": "2025-12-02T00:58:45.732845"
+    },
+    {
+        "type": "mouse_click",
+        "button": "Button.left",
+        "pressed": false,
+        "position": [
+            671,
+            725
+        ],
+        "time": "2025-12-02T00:58:45.853114"
+    },
+    {
+        "type": "mouse_click",
+        "button": "Button.left",
+        "pressed": true,
+        "position": [
+            671,
+            725
+        ],
+        "time": "2025-12-02T00:58:45.908739"
+    },
+    {
+        "type": "mouse_click",
+        "button": "Button.left",
+        "pressed": false,
+        "position": [
+            671,
+            725
+        ],
+        "time": "2025-12-02T00:58:46.052791"
+    },
+    {
+        "type": "key_press",
+        "key": "x",
+        "time": "2025-12-02T00:58:46.220840"
+    },
+    {
+        "type": "key_release",
+        "key": "x",
+        "time": "2025-12-02T00:58:46.309372"
+    },
+    {
+        "type": "key_press",
+        "key": "x",
+        "time": "2025-12-02T00:58:46.405978"
+    },
+    {
+        "type": "key_release",
+        "key": "x",
+        "time": "2025-12-02T00:58:46.484505"
+    },
+    {
+        "type": "key_press",
+        "key": "x",
+        "time": "2025-12-02T00:58:46.564828"
+    },
+    {
+        "type": "key_release",
+        "key": "x",
+        "time": "2025-12-02T00:58:46.692902"
+    },
+    {
+        "type": "mouse_click",
+        "button": "Button.left",
+        "pressed": true,
+        "position": [
+            709,
+            793
+        ],
+        "time": "2025-12-02T00:58:46.756695"
+    },
+    {
+        "type": "mouse_click",
+        "button": "Button.left",
+        "pressed": false,
+        "position": [
+            709,
+            793
+        ],
+        "time": "2025-12-02T00:58:46.860704"
+    },
+    {
+        "type": "mouse_click",
+        "button": "Button.left",
+        "pressed": true,
+        "position": [
+            709,
+            793
+        ],
+        "time": "2025-12-02T00:58:47.044578"
+    },
+    {
+        "type": "mouse_click",
+        "button": "Button.left",
+        "pressed": false,
+        "position": [
+            709,
+            793
+        ],
+        "time": "2025-12-02T00:58:47.190841"
+    },
+    {
+        "type": "mouse_click",
+        "button": "Button.left",
+        "pressed": true,
+        "position": [
+            709,
+            793
+        ],
+        "time": "2025-12-02T00:58:47.252408"
+    },
+    {
+        "type": "mouse_click",
+        "button": "Button.left",
+        "pressed": false,
+        "position": [
+            709,
+            793
+        ],
+        "time": "2025-12-02T00:58:47.341047"
+    },
+    {
+        "type": "key_press",
+        "key": "y",
+        "time": "2025-12-02T00:58:48.268237"
+    },
+    {
+        "type": "key_release",
+        "key": "y",
+        "time": "2025-12-02T00:58:48.351016"
+    },
+    {
+        "type": "key_press",
+        "key": "y",
+        "time": "2025-12-02T00:58:48.445067"
+    },
+    {
+        "type": "key_release",
+        "key": "y",
+        "time": "2025-12-02T00:58:48.517442"
+    },
+    {
+        "type": "key_press",
+        "key": "y",
+        "time": "2025-12-02T00:58:48.596760"
+    },
+    {
+        "type": "key_release",
+        "key": "y",
+        "time": "2025-12-02T00:58:48.677006"
+    },
+    {
+        "type": "mouse_click",
+        "button": "Button.left",
+        "pressed": true,
+        "position": [
+            361,
+            802
+        ],
+        "time": "2025-12-02T00:58:49.013136"
+    },
+    {
+        "type": "mouse_click",
+        "button": "Button.left",
+        "pressed": false,
+        "position": [
+            359,
+            800
+        ],
+        "time": "2025-12-02T00:58:49.085359"
+    },
+    {
+        "type": "mouse_scroll",
+        "delta": [
+            0,
+            -1
+        ],
+        "position": [
+            373,
+            791
+        ],
+        "time": "2025-12-02T00:58:49.284203"
+    },
+    {
+        "type": "mouse_scroll",
+        "delta": [
+            0,
+            -1
+        ],
+        "position": [
+            373,
+            791
+        ],
+        "time": "2025-12-02T00:58:49.340416"
+    },
+    {
+        "type": "mouse_click",
+        "button": "Button.left",
+        "pressed": true,
+        "position": [
+            608,
+            804
+        ],
+        "time": "2025-12-02T00:58:50.140178"
+    },
+    {
+        "type": "mouse_click",
+        "button": "Button.left",
+        "pressed": false,
+        "position": [
+            608,
+            804
+        ],
+        "time": "2025-12-02T00:58:50.236873"
+    },
+    {
+        "type": "mouse_scroll",
+        "delta": [
+            0,
+            -1
+        ],
+        "position": [
+            457,
+            737
+        ],
+        "time": "2025-12-02T00:58:50.555909"
+    },
+    {
+        "type": "mouse_scroll",
+        "delta": [
+            0,
+            -1
+        ],
+        "position": [
+            457,
+            732
+        ],
+        "time": "2025-12-02T00:58:50.604281"
+    },
+    {
+        "type": "mouse_scroll",
+        "delta": [
+            0,
+            -1
+        ],
+        "position": [
+            448,
+            710
+        ],
+        "time": "2025-12-02T00:58:51.013419"
+    },
+    {
+        "type": "mouse_click",
+        "button": "Button.left",
+        "pressed": true,
+        "position": [
+            597,
+            500
+        ],
+        "time": "2025-12-02T00:58:52.884125"
+    },
+    {
+        "type": "mouse_click",
+        "button": "Button.left",
+        "pressed": false,
+        "position": [
+            597,
+            500
+        ],
+        "time": "2025-12-02T00:58:53.014175"
+    },
+    {
+        "type": "mouse_scroll",
+        "delta": [
+            0,
+            -1
+        ],
+        "position": [
+            501,
+            529
+        ],
+        "time": "2025-12-02T00:58:53.620143"
+    },
+    {
+        "type": "mouse_click",
+        "button": "Button.left",
+        "pressed": true,
+        "position": [
+            597,
+            383
+        ],
+        "time": "2025-12-02T00:58:55.044060"
+    },
+    {
+        "type": "mouse_click",
+        "button": "Button.left",
+        "pressed": false,
+        "position": [
+            597,
+            383
+        ],
+        "time": "2025-12-02T00:58:55.189157"
+    },
+    {
+        "type": "mouse_scroll",
+        "delta": [
+            0,
+            -1
+        ],
+        "position": [
+            468,
+            482
+        ],
+        "time": "2025-12-02T00:58:55.883980"
+    },
+    {
+        "type": "mouse_scroll",
+        "delta": [
+            0,
+            -1
+        ],
+        "position": [
+            468,
+            482
+        ],
+        "time": "2025-12-02T00:58:56.011765"
+    },
+    {
+        "type": "mouse_click",
+        "button": "Button.left",
+        "pressed": true,
+        "position": [
+            600,
+            486
+        ],
+        "time": "2025-12-02T00:58:56.955884"
+    },
+    {
+        "type": "mouse_click",
+        "button": "Button.left",
+        "pressed": false,
+        "position": [
+            600,
+            486
+        ],
+        "time": "2025-12-02T00:58:57.052349"
+    },
+    {
+        "type": "mouse_click",
+        "button": "Button.left",
+        "pressed": true,
+        "position": [
+            633,
+            538
+        ],
+        "time": "2025-12-02T00:58:57.531743"
+    },
+    {
+        "type": "mouse_click",
+        "button": "Button.left",
+        "pressed": false,
+        "position": [
+            633,
+            538
+        ],
+        "time": "2025-12-02T00:58:57.612107"
+    },
+    {
+        "type": "key_press",
+        "key": "s",
+        "time": "2025-12-02T00:58:58.021917"
+    },
+    {
+        "type": "key_release",
+        "key": "s",
+        "time": "2025-12-02T00:58:58.071804"
+    },
+    {
+        "type": "key_press",
+        "key": "s",
+        "time": "2025-12-02T00:58:58.180659"
+    },
+    {
+        "type": "key_release",
+        "key": "s",
+        "time": "2025-12-02T00:58:58.275797"
+    },
+    {
+        "type": "key_press",
+        "key": "s",
+        "time": "2025-12-02T00:58:58.439187"
+    },
+    {
+        "type": "key_release",
+        "key": "s",
+        "time": "2025-12-02T00:58:58.499626"
+    },
+    {
+        "type": "mouse_click",
+        "button": "Button.left",
+        "pressed": true,
+        "position": [
+            630,
+            600
+        ],
+        "time": "2025-12-02T00:58:58.837154"
+    },
+    {
+        "type": "mouse_click",
+        "button": "Button.left",
+        "pressed": false,
+        "position": [
+            630,
+            600
+        ],
+        "time": "2025-12-02T00:58:58.956123"
+    },
+    {
+        "type": "key_press",
+        "key": "x",
+        "time": "2025-12-02T00:58:59.299814"
+    },
+    {
+        "type": "key_release",
+        "key": "x",
+        "time": "2025-12-02T00:58:59.388152"
+    },
+    {
+        "type": "key_press",
+        "key": "x",
+        "time": "2025-12-02T00:58:59.484385"
+    },
+    {
+        "type": "key_release",
+        "key": "x",
+        "time": "2025-12-02T00:58:59.587794"
+    },
+    {
+        "type": "key_press",
+        "key": "x",
+        "time": "2025-12-02T00:58:59.675655"
+    },
+    {
+        "type": "key_release",
+        "key": "x",
+        "time": "2025-12-02T00:58:59.772011"
+    },
+    {
+        "type": "mouse_click",
+        "button": "Button.left",
+        "pressed": true,
+        "position": [
+            304,
+            618
+        ],
+        "time": "2025-12-02T00:59:00.427495"
+    },
+    {
+        "type": "mouse_click",
+        "button": "Button.left",
+        "pressed": false,
+        "position": [
+            304,
+            618
+        ],
+        "time": "2025-12-02T00:59:00.535570"
+    },
+    {
+        "type": "mouse_scroll",
+        "delta": [
+            0,
+            -1
+        ],
+        "position": [
+            304,
+            613
+        ],
+        "time": "2025-12-02T00:59:00.771322"
+    },
+    {
+        "type": "mouse_scroll",
+        "delta": [
+            0,
+            -1
+        ],
+        "position": [
+            304,
+            613
+        ],
+        "time": "2025-12-02T00:59:00.803494"
+    },
+    {
+        "type": "mouse_scroll",
+        "delta": [
+            0,
+            -1
+        ],
+        "position": [
+            304,
+            613
+        ],
+        "time": "2025-12-02T00:59:00.845066"
+    },
+    {
+        "type": "mouse_scroll",
+        "delta": [
+            0,
+            -1
+        ],
+        "position": [
+            304,
+            613
+        ],
+        "time": "2025-12-02T00:59:00.883775"
+    },
+    {
+        "type": "mouse_scroll",
+        "delta": [
+            0,
+            -1
+        ],
+        "position": [
+            304,
+            613
+        ],
+        "time": "2025-12-02T00:59:01.300050"
+    },
+    {
+        "type": "mouse_scroll",
+        "delta": [
+            0,
+            -1
+        ],
+        "position": [
+            304,
+            613
+        ],
+        "time": "2025-12-02T00:59:01.331492"
+    },
+    {
+        "type": "mouse_scroll",
+        "delta": [
+            0,
+            -1
+        ],
+        "position": [
+            304,
+            613
+        ],
+        "time": "2025-12-02T00:59:01.403450"
+    },
+    {
+        "type": "mouse_scroll",
+        "delta": [
+            0,
+            -1
+        ],
+        "position": [
+            306,
+            611
+        ],
+        "time": "2025-12-02T00:59:01.739617"
+    },
+    {
+        "type": "mouse_scroll",
+        "delta": [
+            0,
+            -1
+        ],
+        "position": [
+            306,
+            611
+        ],
+        "time": "2025-12-02T00:59:01.796215"
+    },
+    {
+        "type": "mouse_scroll",
+        "delta": [
+            0,
+            -1
+        ],
+        "position": [
+            306,
+            611
+        ],
+        "time": "2025-12-02T00:59:02.140135"
+    },
+    {
+        "type": "mouse_click",
+        "button": "Button.left",
+        "pressed": true,
+        "position": [
+            460,
+            601
+        ],
+        "time": "2025-12-02T00:59:03.123581"
+    },
+    {
+        "type": "mouse_click",
+        "button": "Button.left",
+        "pressed": false,
+        "position": [
+            460,
+            601
+        ],
+        "time": "2025-12-02T00:59:03.220363"
+    },
+    {
+        "type": "mouse_click",
+        "button": "Button.left",
+        "pressed": true,
+        "position": [
+            863,
+            648
+        ],
+        "time": "2025-12-02T00:59:04.107584"
+    },
+    {
+        "type": "mouse_click",
+        "button": "Button.left",
+        "pressed": false,
+        "position": [
+            863,
+            648
+        ],
+        "time": "2025-12-02T00:59:04.211412"
+    },
+    {
+        "type": "mouse_click",
+        "button": "Button.left",
+        "pressed": true,
+        "position": [
+            1192,
+            873
+        ],
+        "time": "2025-12-02T00:59:09.059392"
+    },
+    {
+        "type": "mouse_click",
+        "button": "Button.left",
+        "pressed": false,
+        "position": [
+            1192,
+            873
+        ],
+        "time": "2025-12-02T00:59:09.162972"
+    },
+    {
+        "type": "mouse_click",
+        "button": "Button.left",
+        "pressed": true,
+        "position": [
+            1510,
+            821
+        ],
+        "time": "2025-12-02T00:59:09.867136"
+    },
+    {
+        "type": "mouse_click",
+        "button": "Button.left",
+        "pressed": false,
+        "position": [
+            1510,
+            821
+        ],
+        "time": "2025-12-02T00:59:09.955075"
+    },
+    {
+        "type": "mouse_click",
+        "button": "Button.left",
+        "pressed": true,
+        "position": [
+            1510,
+            821
+        ],
+        "time": "2025-12-02T00:59:11.682954"
+    },
+    {
+        "type": "mouse_click",
+        "button": "Button.left",
+        "pressed": false,
+        "position": [
+            1510,
+            821
+        ],
+        "time": "2025-12-02T00:59:11.788845"
+    },
+    {
+        "type": "key_press",
+        "key": "Key.esc",
+        "time": "2025-12-02T00:59:12.803177"
+    },
+    {
+        "type": "key_release",
+        "key": "Key.esc",
+        "time": "2025-12-02T00:59:13.178703"
+    }
+]
