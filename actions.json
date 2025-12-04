@@ -1,0 +1,414 @@
+[
+  {
+    "type": "mouse_click",
+    "button": "left",
+    "position": [
+      1171,
+      1049
+    ],
+    "delay": 0
+  },
+  {
+    "type": "mouse_click",
+    "button": "left",
+    "position": [
+      240,
+      144
+    ],
+    "delay": 2.0873637199401855
+  },
+  {
+    "type": "key_press",
+    "key": "Key.tab",
+    "delay": 2.9838812351226807
+  },
+  {
+    "type": "key_press",
+    "key": "Key.tab",
+    "delay": 0.3926818370819092
+  },
+  {
+    "type": "key_press",
+    "key": "Key.tab",
+    "delay": 0.20700526237487793
+  },
+  {
+    "type": "key_press",
+    "key": "Key.tab",
+    "delay": 0.20000314712524414
+  },
+  {
+    "type": "key_press",
+    "key": "Key.tab",
+    "delay": 0.1920924186706543
+  },
+  {
+    "type": "key_press",
+    "key": "Key.tab",
+    "delay": 0.22398877143859863
+  },
+  {
+    "type": "key_press",
+    "key": "Key.tab",
+    "delay": 0.21607661247253418
+  },
+  {
+    "type": "key_press",
+    "key": "Key.tab",
+    "delay": 0.40035223960876465
+  },
+  {
+    "type": "key_press",
+    "key": "Key.tab",
+    "delay": 0.35173535346984863
+  },
+  {
+    "type": "key_press",
+    "key": "Key.tab",
+    "delay": 0.29076528549194336
+  },
+  {
+    "type": "key_press",
+    "key": "Key.tab",
+    "delay": 0.3811910152435303
+  },
+  {
+    "type": "key_press",
+    "key": "Key.tab",
+    "delay": 0.36789393424987793
+  },
+  {
+    "type": "key_press",
+    "key": "Key.tab",
+    "delay": 0.4009256362915039
+  },
+  {
+    "type": "key_press",
+    "key": "Key.tab",
+    "delay": 0.47954463958740234
+  },
+  {
+    "type": "key_press",
+    "key": "Key.tab",
+    "delay": 1.0476458072662354
+  },
+  {
+    "type": "key_press",
+    "key": "Key.tab",
+    "delay": 0.4725923538208008
+  },
+  {
+    "type": "key_press",
+    "key": "n",
+    "delay": 1.7050890922546387
+  },
+  {
+    "type": "key_press",
+    "key": "n",
+    "delay": 0.17426776885986328
+  },
+  {
+    "type": "key_press",
+    "key": "n",
+    "delay": 0.1685352325439453
+  },
+  {
+    "type": "key_press",
+    "key": "Key.tab",
+    "delay": 1.3598945140838623
+  },
+  {
+    "type": "key_press",
+    "key": "n",
+    "delay": 0.488248348236084
+  },
+  {
+    "type": "key_press",
+    "key": "n",
+    "delay": 0.1754930019378662
+  },
+  {
+    "type": "key_press",
+    "key": "n",
+    "delay": 0.160383939743042
+  },
+  {
+    "type": "key_press",
+    "key": "Key.tab",
+    "delay": 0.5843579769134521
+  },
+  {
+    "type": "key_press",
+    "key": "n",
+    "delay": 0.39119601249694824
+  },
+  {
+    "type": "key_press",
+    "key": "n",
+    "delay": 0.16857218742370605
+  },
+  {
+    "type": "key_press",
+    "key": "n",
+    "delay": 0.1672348976135254
+  },
+  {
+    "type": "key_press",
+    "key": "Key.shift",
+    "delay": 0.8246598243713379
+  },
+  {
+    "type": "key_press",
+    "key": "Key.shift",
+    "delay": 0.503488302230835
+  },
+  {
+    "type": "key_press",
+    "key": "Key.shift",
+    "delay": 0.04333138465881348
+  },
+  {
+    "type": "key_press",
+    "key": "Key.shift",
+    "delay": 0.02855849266052246
+  },
+  {
+    "type": "key_press",
+    "key": "Key.shift",
+    "delay": 0.031612396240234375
+  },
+  {
+    "type": "key_press",
+    "key": "Key.shift",
+    "delay": 0.03224062919616699
+  },
+  {
+    "type": "key_press",
+    "key": "Key.shift",
+    "delay": 0.03138470649719238
+  },
+  {
+    "type": "key_press",
+    "key": "Key.shift",
+    "delay": 0.031302452087402344
+  },
+  {
+    "type": "key_press",
+    "key": "Key.shift",
+    "delay": 0.03168439865112305
+  },
+  {
+    "type": "key_press",
+    "key": "Key.shift",
+    "delay": 0.03228402137756348
+  },
+  {
+    "type": "key_press",
+    "key": "Key.shift",
+    "delay": 0.043676137924194336
+  },
+  {
+    "type": "key_press",
+    "key": "Key.shift",
+    "delay": 0.03134417533874512
+  },
+  {
+    "type": "key_press",
+    "key": "Key.shift",
+    "delay": 0.029719829559326172
+  },
+  {
+    "type": "key_press",
+    "key": "Key.shift",
+    "delay": 0.030580759048461914
+  },
+  {
+    "type": "key_press",
+    "key": "Key.shift",
+    "delay": 0.04394721984863281
+  },
+  {
+    "type": "key_press",
+    "key": "Key.shift",
+    "delay": 0.020264625549316406
+  },
+  {
+    "type": "key_press",
+    "key": "@",
+    "delay": 0.0038084983825683594
+  },
+  {
+    "type": "key_press",
+    "key": "n",
+    "delay": 1.0390536785125732
+  },
+  {
+    "type": "key_press",
+    "key": "n",
+    "delay": 0.167006254196167
+  },
+  {
+    "type": "key_press",
+    "key": "n",
+    "delay": 0.16812920570373535
+  },
+  {
+    "type": "key_press",
+    "key": ".",
+    "delay": 0.28028345108032227
+  },
+  {
+    "type": "key_press",
+    "key": "c",
+    "delay": 0.19226527214050293
+  },
+  {
+    "type": "key_press",
+    "key": "o",
+    "delay": 0.06337356567382812
+  },
+  {
+    "type": "key_press",
+    "key": "m",
+    "delay": 0.06400537490844727
+  },
+  {
+    "type": "key_press",
+    "key": "Key.tab",
+    "delay": 1.3280103206634521
+  },
+  {
+    "type": "mouse_click",
+    "button": "left",
+    "position": [
+      628,
+      827
+    ],
+    "delay": 2.6002039909362793
+  },
+  {
+    "type": "key_press",
+    "key": "Key.tab",
+    "delay": 1.6557295322418213
+  },
+  {
+    "type": "key_press",
+    "key": "Key.tab",
+    "delay": 3.7199835777282715
+  },
+  {
+    "type": "mouse_click",
+    "button": "left",
+    "position": [
+      591,
+      418
+    ],
+    "delay": 3.344409465789795
+  },
+  {
+    "type": "key_press",
+    "key": "Key.tab",
+    "delay": 2.4636547565460205
+  },
+  {
+    "type": "key_press",
+    "key": "Key.tab",
+    "delay": 1.1447851657867432
+  },
+  {
+    "type": "key_press",
+    "key": "Key.tab",
+    "delay": 0.9762725830078125
+  },
+  {
+    "type": "key_press",
+    "key": "Key.tab",
+    "delay": 0.3266308307647705
+  },
+  {
+    "type": "key_press",
+    "key": "Key.tab",
+    "delay": 0.48072218894958496
+  },
+  {
+    "type": "key_press",
+    "key": "Key.tab",
+    "delay": 0.31223177909851074
+  },
+  {
+    "type": "key_press",
+    "key": "Key.tab",
+    "delay": 0.3753805160522461
+  },
+  {
+    "type": "key_press",
+    "key": "Key.tab",
+    "delay": 0.4985082149505615
+  },
+  {
+    "type": "mouse_click",
+    "button": "left",
+    "position": [
+      582,
+      770
+    ],
+    "delay": 2.4541401863098145
+  },
+  {
+    "type": "key_press",
+    "key": "Key.tab",
+    "delay": 3.0802853107452393
+  },
+  {
+    "type": "key_press",
+    "key": "n",
+    "delay": 1.5120444297790527
+  },
+  {
+    "type": "key_press",
+    "key": "n",
+    "delay": 0.16688251495361328
+  },
+  {
+    "type": "key_press",
+    "key": "n",
+    "delay": 0.17589259147644043
+  },
+  {
+    "type": "key_press",
+    "key": "Key.tab",
+    "delay": 1.5438826084136963
+  },
+  {
+    "type": "mouse_click",
+    "button": "left",
+    "position": [
+      445,
+      590
+    ],
+    "delay": 2.352548837661743
+  },
+  {
+    "type": "mouse_click",
+    "button": "left",
+    "position": [
+      453,
+      592
+    ],
+    "delay": 1.9523372650146484
+  },
+  {
+    "type": "mouse_click",
+    "button": "left",
+    "position": [
+      1434,
+      686
+    ],
+    "delay": 1.3112702369689941
+  },
+  {
+    "type": "key_press",
+    "key": "Key.esc",
+    "delay": 2.1678946018218994
+  }
+]
