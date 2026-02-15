@@ -1,3 +1,7 @@
+
+import pyautogui
+import pyperclip
+import time
 import json
 import time
 import platform
@@ -11,6 +15,11 @@ last_event_time = None   # <-- NEW: track last event time
 
 pyautogui.PAUSE = 0.01
 pyautogui.FAILSAFE = False
+
+import webbrowser
+
+url = "https://practiscore.com/tts-tactical-pistol-18feb2026/register"
+url = "https://practiscore.com/thunder-tactical-shooters-uspsa-match-21feb2026-clone/register"
 
 
 def enable_windows_dpi_awareness():
@@ -73,6 +82,8 @@ def start_recording():
     print("Recording mouse & keyboard with timing...")
     print("Press ESC to stop.\n")
 
+    webbrowser.open(url)
+
     global recording
 
     def stop_on_esc(key):
@@ -97,47 +108,107 @@ def start_recording():
 # REPLAY PART
 # -----------------------------
 def replay_actions():
-    with open(ACTIONS_FILE, "r", encoding="utf-8") as f:
-        acts = json.load(f)
 
-    print(f"Replaying {len(acts)} actions with original timing...")
-    enable_windows_dpi_awareness()
+    webbrowser.open(url)
+    time.sleep(3)
 
-    for event in acts:
-        # Wait the recorded delay
-        time.sleep(event.get("delay", 0))
+    for i in range(17):
+        pyautogui.press("tab")
+        time.sleep(0.001)
 
-        if event["type"] == "mouse_click":
-            x, y = event["position"]
-            pyautogui.moveTo(int(x), int(y))
-            if event["button"] == "left":
-                pyautogui.click()
-            else:
-                pyautogui.click(button="right")
 
-        elif event["type"] == "key_press":
-            k = event["key"]
-            if k.startswith("Key."):
-                key_name = k.split(".", 1)[1]
-                special_map = {
-                    "enter": "enter",
-                    "space": "space",
-                    "backspace": "backspace",
-                    "tab": "tab",
-                    "esc": "esc",
-                    "shift": "shift",
-                    "ctrl": "ctrl",
-                    "alt": "alt",
-                }
-                mapped = special_map.get(key_name, key_name)
-                try:
-                    pyautogui.press(mapped)
-                except Exception:
-                    print(f"Warning: skipped unknown key {k}")
-            else:
-                pyautogui.typewrite(str(k))
+    pyautogui.write("FirstName", interval=0.05)
 
-    print("Replay complete.")
+    # Determine modifier key (Ctrl on Windows/Linux, Command on macOS)
+    mod_key = "command" if platform.system() == "Darwin" else "ctrl"
+
+    # Select all
+    pyautogui.hotkey(mod_key, "a")
+    time.sleep(0.1)
+
+    # Copy
+    pyautogui.hotkey(mod_key, "c")
+    time.sleep(0.1)
+
+    # Get clipboard content
+    clipboard_content = pyperclip.paste()
+
+    print("Clipboard content:", clipboard_content)
+
+    pyautogui.press("tab")
+
+    pyautogui.write("LastName", interval=0.05)
+
+    pyautogui.press("tab")
+
+    pyautogui.write("YourEmail@Address.com", interval=0.05)
+
+    for i in range(3):
+        pyautogui.press("tab")
+        time.sleep(0.001)
+
+    ###
+
+
+    pyautogui.write("A123456", interval=0.05)
+
+    for i in range(5):
+        pyautogui.press("tab")
+        time.sleep(1)
+
+    pyautogui.press("space")
+
+    for i in range(3):
+        pyautogui.press("tab")
+        time.sleep(1)
+
+    pyautogui.press("space")
+
+    time.sleep(1)
+
+    pyautogui.press("tab")
+
+    # with open(ACTIONS_FILE, "r", encoding="utf-8") as f:
+    #     acts = json.load(f)
+
+    # print(f"Replaying {len(acts)} actions with original timing...")
+    # enable_windows_dpi_awareness()
+
+    # for event in acts:
+    #     # Wait the recorded delay
+    #     time.sleep(event.get("delay", 0))
+
+    #     if event["type"] == "mouse_click":
+    #         x, y = event["position"]
+    #         pyautogui.moveTo(int(x), int(y))
+    #         if event["button"] == "left":
+    #             pyautogui.click()
+    #         else:
+    #             pyautogui.click(button="right")
+
+    #     elif event["type"] == "key_press":
+    #         k = event["key"]
+    #         if k.startswith("Key."):
+    #             key_name = k.split(".", 1)[1]
+    #             special_map = {
+    #                 "enter": "enter",
+    #                 "space": "space",
+    #                 "backspace": "backspace",
+    #                 "tab": "tab",
+    #                 "esc": "esc",
+    #                 "shift": "shift",
+    #                 "ctrl": "ctrl",
+    #                 "alt": "alt",
+    #             }
+    #             mapped = special_map.get(key_name, key_name)
+    #             try:
+    #                 pyautogui.press(mapped)
+    #             except Exception:
+    #                 print(f"Warning: skipped unknown key {k}")
+    #         else:
+    #             pyautogui.typewrite(str(k))
+
+    # print("Replay complete.")
 
 
 # -----------------------------
