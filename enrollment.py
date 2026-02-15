@@ -23,9 +23,9 @@ import webbrowser
 # url = "https://practiscore.com/thunder-tactical-shooters-uspsa-match-21feb2026-clone/register"
 # url = "https://practiscore.com/kidlat-shooters-march-uspsa-match-3-7-26/register"
 # url = "https://practiscore.com/texas-state-open-championship-2026/register"
-url = "https://practiscore.com/spcgc-asp-single-stack-shootout-2-26-26/register"
-email = "YourEmail@Address.com"
-email = "jimjywang@gmail.com"
+url = "https://practiscore.com/bayou-city-monthly-may-10th-at-oilfield-sports-complex-1/register"
+# email = "YourEmail@Address.com"
+# email = "jimjywang@gmail.com"
 
 # Determine modifier key (Ctrl on Windows/Linux, Command on macOS)
 mod_key = "command" if platform.system() == "Darwin" else "ctrl"
@@ -94,7 +94,7 @@ def on_key_press(key):
 # -----------------------------
 # REPLAY PART
 # -----------------------------
-def replay_actions():
+def enroll_by_email(email):
 
 
     content_to_move = [
@@ -278,10 +278,10 @@ def replay_actions():
     pyautogui.hotkey(mod_key, "w")
 
 
-
 # -----------------------------
 # MAIN
 # -----------------------------
 if __name__ == "__main__":
 
-    replay_actions()
+    for email in ["jimjywang@gmail.com", "crossdominantshooters@gmail.com"]:
+        enroll_by_email(email)
