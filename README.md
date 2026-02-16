@@ -23,6 +23,4 @@ open 🪟 Windows (PowerShell)
 
 cd "C:\Users\yanli\mouse_keyboard_control"
 venv\Scripts\Activate.ps1
-
-
 python enrollment.py

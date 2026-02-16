@@ -23,7 +23,10 @@ import webbrowser
 # url = "https://practiscore.com/thunder-tactical-shooters-uspsa-match-21feb2026-clone/register"
 # url = "https://practiscore.com/kidlat-shooters-march-uspsa-match-3-7-26/register"
 # url = "https://practiscore.com/texas-state-open-championship-2026/register"
-url = "https://practiscore.com/bayou-city-monthly-may-10th-at-oilfield-sports-complex-1/register"
+# url = "https://practiscore.com/texas-state-open-championship-2026/register"
+# url = 
+
+
 # email = "YourEmail@Address.com"
 # email = "jimjywang@gmail.com"
 
@@ -50,77 +53,16 @@ enable_windows_dpi_awareness()
 INTERVAL_SHORT = 0.1
 INTERVAL_LONG = 1.0
 
-# -----------------------------
-# RECORDING PART
-# -----------------------------
-def record_event(evt):
-    """Attach timing info to event and store it."""
-    global last_event_time
 
-    now = time.time()
-    if last_event_time is None:
-        evt["delay"] = 0
-    else:
-        evt["delay"] = now - last_event_time
-
-    last_event_time = now
-    actions.append(evt)
-
-
-def on_click(x, y, button, pressed):
-    if pressed:
-        btn = "left" if button == mouse.Button.left else "right"
-        evt = {
-            "type": "mouse_click",
-            "button": btn,
-            "position": [int(x), int(y)]
-        }
-        record_event(evt)
-        print(f"Recorded mouse click: {btn} at {evt['position']}")
-
-
-def on_key_press(key):
-    try:
-        k = key.char
-    except AttributeError:
-        k = f"Key.{key.name}"
-
-    evt = {"type": "key_press", "key": k}
-    record_event(evt)
-    print(f"Recorded key press: {k}")
-
-
-
-# -----------------------------
-# REPLAY PART
-# -----------------------------
-def enroll_by_email(email):
-
-
-    content_to_move = [
-        "Division",
-        "Junior",
-        "Senior",
-        "Super",
-        "Distinguished",
-        "Law",
-        "Lady",
-        "Lady",
-        "Military",
-        "Foreign",
-        "Power Factor",
-        "Class",
-        "RM",
-        "CRO",
-        "RO",
-        "ScoreKeeper",
-        "None",
-        "I would like to create a Group registration",
-        "I have a group registration code",
-    ]
+def enroll_by_email(
+    first_name, 
+    last_name,
+    email,
+    uspsa_member_number,
+    url):
 
     webbrowser.open(url)
-    time.sleep(INTERVAL_LONG)
+    time.sleep(INTERVAL_LONG*2)
 
     mod_key = "ctrl"  # use "command" on Mac
 
@@ -131,7 +73,6 @@ def enroll_by_email(email):
     # time.sleep(INTERVAL_SHORT)    
     # clipboard_content_original = pyperclip.paste()
     # time.sleep(INTERVAL_LONG*2)
-
 
     # 1️⃣ Open page source (Ctrl+U)
     pyautogui.hotkey(mod_key, "u")
@@ -150,28 +91,25 @@ def enroll_by_email(email):
     # 4️⃣ Close source tab (Ctrl+W)
     pyautogui.hotkey(mod_key, "w")
 
-
     # 1️⃣ Content between Email and Member Number
     match1 = re.search(r'>\s*Email\s*<\s*(.*?)\s*>\s*Member Number\s*<', clipboard_content, re.DOTALL)
     if match1:
-        content_to_move_before_member_number = match1.group(1).strip()
+        content_to_move_before_member_number = match1.group().strip()
         # print("Content before Member Number:", content_to_move_before_member_number)
     else:
         # print("No match for content before Member Number")
         content_to_move_before_member_number = None
 
     # 2️⃣ Content between Member Number and Waiver
-    match2 = re.search(r'>\s*Member Number\s*<\s*(.*?)\s*>\s*Waiver\s*<', clipboard_content, re.DOTALL)
+    match2 = re.search(r'>\s*Member Number\s*<\s*(.*?)\s*>\s*Waiver\s*<small', clipboard_content, re.DOTALL)
     if match2:
-        content_to_move_between_member_number_and_waiver = match2.group(1).strip()
+        content_to_move_between_member_number_and_waiver = match2.group().strip()
         # print("Content between Member Number and Waiver:", content_to_move_between_member_number_and_waiver)
     else:
         content_to_move_between_member_number_and_waiver = None
         # print("No match for content between Member Number and Waiver")
 
-
     initial_tabs = 17
-
 
     if 'Add<' in clipboard_content:
         initial_tabs += 1
@@ -181,11 +119,11 @@ def enroll_by_email(email):
         time.sleep(INTERVAL_SHORT)
 
 
-    pyautogui.write("FirstName", interval=INTERVAL_SHORT)
+    pyautogui.write(first_name, interval=INTERVAL_SHORT)
 
     pyautogui.press("tab")
 
-    pyautogui.write("LastName", interval=INTERVAL_SHORT)
+    pyautogui.write(last_name, interval=INTERVAL_SHORT)
 
     pyautogui.press("tab")
 
@@ -197,83 +135,102 @@ def enroll_by_email(email):
         '>Power Factor<',
         '>Class<',
         'officer-certification" type="radio"',
-        '>Phone<',
+        '>Phone</label>',
     ]
 
-    for c in content_to_move_html:
-        if c in content_to_move_before_member_number:
-            # print(f'with {c}')
-            pyautogui.press("tab")
-            time.sleep(INTERVAL_SHORT)   
-            pyautogui.press("space")
-            time.sleep(INTERVAL_SHORT)   
-
-    for i in range(content_to_move_before_member_number.count('type="checkbox"')):
-        # print(f'with {c}')
-        pyautogui.press("tab")
-        time.sleep(INTERVAL_SHORT)   
-        pyautogui.press("space")
-        time.sleep(INTERVAL_SHORT)   
 
 
-    pyautogui.press("tab")
-    time.sleep(0.001)
-    pyautogui.write("A123456", interval=INTERVAL_SHORT)
+    checklist_to_skip = [
+    'certification[]" type="checkbox"',
+    'categories[]" type="checkbox"',
+    'group_reg" type="checkbox"',
+    '"group_reg_join" type="checkbox"',
+    ]
 
 
-    if content_to_move_between_member_number_and_waiver is not None:
-        # ratio
+    if content_to_move_before_member_number is not None:
+
         for c in content_to_move_html:
-            if c in content_to_move_between_member_number_and_waiver:
-                # print(f'with {c}')
+            if c in content_to_move_before_member_number:
+                # print(f'processing {c}')
                 pyautogui.press("tab")
                 time.sleep(INTERVAL_SHORT)   
                 pyautogui.press("space")
                 time.sleep(INTERVAL_SHORT)   
 
-        # check
-        for i in range(content_to_move_between_member_number_and_waiver.count('type="checkbox"')):
-            # print(f'with {c}')
-            pyautogui.press("tab")
-            time.sleep(INTERVAL_SHORT)   
+        for cheklist_item in checklist_to_skip:
+            for i in range(content_to_move_before_member_number.count(cheklist_item)):
+                print(f'processing {cheklist_item}')
+                pyautogui.press("tab")
+                time.sleep(INTERVAL_SHORT)   
+                pyautogui.press("space")
+                time.sleep(INTERVAL_SHORT)   
+
+            ## need to fill up a space
+
+    # enter uspsa member
+    pyautogui.press("tab")
+    time.sleep(INTERVAL_SHORT)
+    pyautogui.write(uspsa_member_number, interval=INTERVAL_SHORT)
 
 
-        # check waiver
-        pyautogui.press("tab")
-        time.sleep(INTERVAL_SHORT)
-        pyautogui.press("space")
+    ###
+
+    if content_to_move_between_member_number_and_waiver is not None:
+        # ratio
+        for c in content_to_move_html:
+            if c in content_to_move_between_member_number_and_waiver:
+                print(f'processing {c}')
+                pyautogui.press("tab")
+                time.sleep(INTERVAL_SHORT)   
+                pyautogui.press("space")
+                time.sleep(INTERVAL_SHORT)   
+
+        for cheklist_item in checklist_to_skip:
+            for i in range(content_to_move_between_member_number_and_waiver.count(cheklist_item)):
+                print(f'processing {cheklist_item}')
+                pyautogui.press("tab")
+                time.sleep(INTERVAL_SHORT)   
+                pyautogui.press("space")
+                time.sleep(INTERVAL_SHORT)   
 
 
-    content_to_move = [
-        "donation",
-        "Click to apply the Junior (under 18) discount",
-    ]
-
-    for c in content_to_move:
-        if c in clipboard_content:
-            pyautogui.press("tab")
-            time.sleep(INTERVAL_LONG)   
+    # check waiver
+    pyautogui.press("tab")
+    time.sleep(INTERVAL_SHORT)
+    pyautogui.press("space")
 
     # if 'Card Info' in  clipboard_content_original:
 
+    # payment information 
 
-    if 'Stripe' in clipboard_content:
+    # content_to_move = [
+    #     "_donation&quot;:0",
+    #     "Click to apply the Junior (under 18) discount",
+    # ]
 
-        # enter card number
-        pyautogui.press("tab")
-        time.sleep(INTERVAL_LONG)
+    # for c in content_to_move:
+    #     if c in clipboard_content:
+    #         print(f'processing {c}')
+    #         pyautogui.press("tab")
+    #         time.sleep(INTERVAL_LONG)   
 
-        # enter payment link and select it 
-        pyautogui.press("tab")
-        time.sleep(INTERVAL_LONG)
-        pyautogui.press("space")
+    # # enter card number
+    # pyautogui.press("tab")
+    # time.sleep(INTERVAL_LONG)
+
+    # # enter payment link and select it 
+    # pyautogui.press("tab")
+    # time.sleep(INTERVAL_LONG)
+    # pyautogui.press("space")
+    # time.sleep(INTERVAL_LONG)
 
     # enter register
     pyautogui.press("tab")
     time.sleep(INTERVAL_LONG)
 
-    # pyautogui.press("space")
-    time.sleep(INTERVAL_LONG*3)
+    pyautogui.press("space")
+    time.sleep(INTERVAL_LONG*10)
 
     pyautogui.hotkey(mod_key, "w")
 
@@ -283,5 +240,13 @@ def enroll_by_email(email):
 # -----------------------------
 if __name__ == "__main__":
 
-    for email in ["jimjywang@gmail.com", "crossdominantshooters@gmail.com"]:
-        enroll_by_email(email)
+    enroll_by_email(
+        first_name = "Yanlin",
+        last_name = "Xiang",
+        email = "yanlinxiang01@gmail.com", 
+        uspsa_member_number = "A164967", 
+        url = "https://practiscore.com/kidlat-shooters-march-uspsa-match-3-7-26/register",
+        )
+    
+
+    # https://practiscore.com/kidlat-shooters-march-uspsa-match-3-7-26/register
