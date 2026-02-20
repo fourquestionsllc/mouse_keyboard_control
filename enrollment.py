@@ -69,6 +69,69 @@ def enroll_by_email(
 
     # registration steps
 
+
+    if 'thunder' in url:
+        for i in range(17):
+            pyautogui.press("tab")
+            time.sleep(INTERVAL_SHORT)
+
+        pyautogui.write(first_name, interval=INTERVAL_SHORT)
+        time.sleep(INTERVAL_SHORT)
+        pyautogui.press("tab")
+
+        pyautogui.write(last_name, interval=INTERVAL_SHORT)
+        time.sleep(INTERVAL_SHORT)
+        pyautogui.press("tab")
+
+        pyautogui.write(email, interval=INTERVAL_SHORT)
+        time.sleep(INTERVAL_SHORT)
+
+
+        # division and class        
+        for i in range(2):
+            pyautogui.press("tab")
+            time.sleep(INTERVAL_SHORT)
+            pyautogui.press("space")
+            time.sleep(INTERVAL_SHORT)
+
+        # categories
+        for i in range(7):
+            pyautogui.press("tab")
+            time.sleep(INTERVAL_SHORT)
+
+        # poower factor
+        for i in range(1):
+            pyautogui.press("tab")
+            time.sleep(INTERVAL_SHORT)
+            pyautogui.press("space")
+            time.sleep(INTERVAL_SHORT)
+
+        # membmer number
+        pyautogui.press("tab")
+        pyautogui.write(uspsa_member_number, interval=INTERVAL_SHORT)
+        time.sleep(INTERVAL_SHORT)
+
+        # officer and group
+        for i in range(7):
+            pyautogui.press("tab")
+            time.sleep(INTERVAL_SHORT)
+
+        pyautogui.press("tab")
+        time.sleep(INTERVAL_SHORT)
+        pyautogui.press("space")
+        time.sleep(INTERVAL_SHORT)
+
+        pyautogui.press("tab")
+        time.sleep(INTERVAL_SHORT)
+        pyautogui.press("space")
+        time.sleep(INTERVAL_SHORT)
+
+        time.sleep(INTERVAL_LONG*10)
+
+        pyautogui.hotkey(mod_key, "w")
+
+
+
     if 'brazosland' in url:
         for i in range(17):
             pyautogui.press("tab")
@@ -114,9 +177,9 @@ def enroll_by_email(
 
         pyautogui.press("enter")
 
-    time.sleep(INTERVAL_LONG*10)
+        time.sleep(INTERVAL_LONG*10)
 
-    pyautogui.hotkey(mod_key, "w")
+        pyautogui.hotkey(mod_key, "w")
 
 
 # -----------------------------
@@ -125,11 +188,11 @@ def enroll_by_email(
 if __name__ == "__main__":
 
     enroll_by_email(
-        first_name = "Coder",
-        last_name = "Wang",
+        first_name = "FirstName",
+        last_name = "LastName",
         email = "jimjywang@gmail.com", 
         uspsa_member_number = "A170259", 
-        url = "https://practiscore.com/brazosland-pistoleros-uspsa-sunday-march-15th/register",
+        url = "https://practiscore.com/thunder-tactical-shooters-uspsa-match-14mar2026/register",
         )
     
 
